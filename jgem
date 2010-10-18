@@ -1,0 +1,3 @@
+#!/bin/sh
+
+JRUBY_HOME=/opt/jruby /opt/jruby/bin/jgem "$@"

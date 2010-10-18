@@ -1,6 +1,6 @@
 Name:    jruby
 Version: 1.5.3
-Release: 1.frameos
+Release:  3.frameos
 Summary:  Pure-Java Implementation of the Ruby Programming Language
 Group:    Development/System 
 License:  Multiple 
@@ -12,6 +12,7 @@ Source3:  jrake
 Source4:  jrdoc
 Source5:  jrubyc
 Source6:  jri
+Source7:  jgem
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 Requires: java-1.6.0-openjdk
 
@@ -42,6 +43,7 @@ cp %{SOURCE3} $RPM_BUILD_ROOT/%{_bindir}/
 cp %{SOURCE4} $RPM_BUILD_ROOT/%{_bindir}/
 cp %{SOURCE5} $RPM_BUILD_ROOT/%{_bindir}/
 cp %{SOURCE6} $RPM_BUILD_ROOT/%{_bindir}/
+cp %{SOURCE7} $RPM_BUILD_ROOT/%{_bindir}/
 cp $RPM_BUILD_DIR/%{name}-%{version}/README $RPM_BUILD_ROOT/%{_docdir}/%{name}/
 cp $RPM_BUILD_DIR/%{name}-%{version}/LICENSE.RUBY $RPM_BUILD_ROOT/%{_docdir}/%{name}/
 cp $RPM_BUILD_DIR/%{name}-%{version}/COPYING $RPM_BUILD_ROOT/%{_docdir}/%{name}/
@@ -59,5 +61,11 @@ rm -rf $RPM_BUILD_ROOT
 /usr/bin
 
 %changelog
+* Fri Oct 15 2010 Sergio Rubio <rubiojr@frameos.org> 1.5.3-3
+- Fixed wrapper scripts
+
+* Fri Oct 15 2010 Sergio Rubio <rubiojr@frameos.org> 1.5.3-2
+- Install jgem wrapper script
+
 * Fri Oct 15 2010 Sergio Rubio <rubiojr@frameos.org> 1.5.3-1
 - Initial release
