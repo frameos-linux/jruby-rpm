@@ -1,6 +1,6 @@
 Name:    jruby
-Version: 1.5.3
-Release:  3.frameos
+Version: 1.5.6
+Release:  1%{?dist}
 Summary:  Pure-Java Implementation of the Ruby Programming Language
 Group:    Development/System 
 License:  Multiple 
@@ -61,6 +61,9 @@ rm -rf $RPM_BUILD_ROOT
 /usr/bin
 
 %changelog
+* Sun Dec 19 2010 Sergio Rubio <rubiojr@frameos.org> - 1.5.6-1
+- updated to 1.5.6
+
 * Fri Oct 15 2010 Sergio Rubio <rubiojr@frameos.org> 1.5.3-3
 - Fixed wrapper scripts
 
