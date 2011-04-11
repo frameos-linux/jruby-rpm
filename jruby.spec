@@ -1,5 +1,5 @@
 Name:    jruby
-Version: 1.5.6
+Version:  1.6.0
 Release:  1%{?dist}
 Summary:  Pure-Java Implementation of the Ruby Programming Language
 Group:    Development/System 
@@ -61,6 +61,12 @@ rm -rf $RPM_BUILD_ROOT
 /usr/bin
 
 %changelog
+* Thu Mar 17 2011 Sergio Rubio <rubiojr@frameos.org> - 1.6.0
+- updated to 1.6.0
+
+* Thu Feb 10 2011 Sergio Rubio <srubio@frameos.org> - 1.6.0.RC2-1
+- updated to 1.6.0.RC2
+
 * Sun Dec 19 2010 Sergio Rubio <rubiojr@frameos.org> - 1.5.6-1
 - updated to 1.5.6
 
