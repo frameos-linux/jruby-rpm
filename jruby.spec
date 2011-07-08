@@ -1,11 +1,11 @@
 Name:    jruby
-Version:  1.6.0
+Version:  1.6.3
 Release:  1%{?dist}
 Summary:  Pure-Java Implementation of the Ruby Programming Language
 Group:    Development/System 
 License:  Multiple 
 URL:      http://www.jruby.org 
-Source0:  %{name}-bin-%{version}.tar.gz
+Source0:  http://jruby.org.s3.amazonaws.com/downloads/%{version}/%{name}-bin-%{version}.tar.gz
 Source1:  jruby
 Source2:  jirb
 Source3:  jrake
@@ -61,6 +61,12 @@ rm -rf $RPM_BUILD_ROOT
 /usr/bin
 
 %changelog
+* Fri Jul 08 2011 Sergio Rubio <srubio@abiquo.com> - 1.6.3-1
+- bump version
+
+* Thu Apr 14 2011 Sergio Rubio <rubiojr@frameos.org> - 1.6.1-1
+- bumped version
+
 * Thu Mar 17 2011 Sergio Rubio <rubiojr@frameos.org> - 1.6.0
 - updated to 1.6.0
 
